@@ -4,8 +4,10 @@ import { Field, ID, ObjectType } from '@nestjs/graphql';
 export class Product {
   @Field(() => ID)
   id: string;
+
   @Field()
   title: string;
+
   @Field()
   slug: string;
 }
